@@ -28,9 +28,9 @@ P.S. Предпочтительнее реализация тестового н
     - docker exec -t -i gradle-app ./gradlew
 
 ### Postman
-    - all user: Get --> http://localhost:8080/users/
-    - UserbyId: Get --> http://localhost:8080/users/{id}
-    - add new user: Post -->  http://localhost:8080/users/{user}
+    all user: Get --> http://localhost:8080/users/
+    UserbyId: Get --> http://localhost:8080/users/{id}
+    add new user: Post -->  http://localhost:8080/users/{user}
 
 swagger also available
 
