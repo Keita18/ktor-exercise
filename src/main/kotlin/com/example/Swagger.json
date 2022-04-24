@@ -1,0 +1,81 @@
+{
+  "swagger": "2.0",
+  "info": {
+    "title": "Title",
+    "description": "Title",
+    "version": "1.0.0"
+  },
+  "host": "localhost:8080",
+  "schemes": [
+    "https",
+    "http"
+  ],
+  "consumes": [
+    "application/json"
+  ],
+  "produces": [
+    "application/json"
+  ],
+  "basePath": "/users",
+  "paths": {
+    "/": {
+      "get": {
+        "operationId": "show all users",
+        "summary": "Show users",
+        "produces": [
+          "application/json"
+        ],
+        "responses": {
+          "200": {
+            "description": "200 response"
+          }
+        }
+      },
+      "post": {
+        "summary": "create",
+        "responses": {
+          "201": {
+            "description": "UserModel"
+          }
+        },
+        "parameters": [
+          {
+            "name": "body",
+            "in": "body",
+            "description": "PetModel",
+            "required": true,
+            "schema": {
+
+            }
+          }
+        ]
+      }
+    },
+    "/{id}": {
+      "get": {
+        "summary": "find",
+        "responses": {
+          "200": {
+            "description": "PetModel",
+            "schema": {
+
+            }
+          },
+          "404": {
+            "description": "Not Found"
+          }
+        },
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "description": "id",
+            "required": true,
+            "type": "integer",
+            "format": "int32"
+          }
+        ]
+      }
+    }
+  }
+}
