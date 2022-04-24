@@ -35,6 +35,7 @@ dependencies {
     implementation("org.postgresql:postgresql:42.2.2")
     implementation ("com.zaxxer:HikariCP:3.4.2")  //Hickari
     implementation("com.apurebase:kgraphql:0.17.14")
+    implementation("org.flywaydb:flyway-core:8.5.9") //flywaydb
 
     testImplementation("io.ktor:ktor-server-tests-jvm:$ktor_version")
     testImplementation("org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version")
