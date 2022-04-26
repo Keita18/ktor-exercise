@@ -12,11 +12,6 @@
   
 * Вести разработку с использованием системы контроля версий Git
   1-2 Unit теста на получившийся код
-  Доступы в github передать:
- 
-* https://github.com/ITurchenko
-  
-* mihanvr@gmail.com
 
 P.S. Предпочтительнее реализация тестового на Kotlin. Просьба, не увлекаться использованием коробочных фич Spring для CRUD, предпочтительнее Ktor+Exposed :-P
 
@@ -25,7 +20,7 @@ P.S. Предпочтительнее реализация тестового н
 1) Download the project to yourself.
 2) Run command:
     - docker-compose up --build
-    - docker exec -t -i gradle-app ./gradlew
+    - docker exec -t -i ktor-gradle-app ./gradlew
 
 ### Postman
     - all user: Get --> http://localhost:8080/users/
